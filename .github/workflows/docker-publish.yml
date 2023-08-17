@@ -67,7 +67,7 @@ jobs:
         with:
           images: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags:: |
+          tags: |
             type=raw,value=${{ env.TF_RUNNER_VERSION }}-${{ env.TERRAFORM_VERSION }}
 
       # Build and push Docker image with Buildx (don't push on PR)
