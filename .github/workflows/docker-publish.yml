@@ -19,7 +19,7 @@ env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
   TERRAFORM_VERSION: 1.5
-  TF_RUNNER_VERSION: 0.15.1
+  TF_RUNNER_VERSION: v0.15.1
 
 
 jobs:
