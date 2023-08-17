@@ -79,6 +79,9 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args:
+            - TERRAFORM_VERSION=env.TERRAFORM_VERSION
+            - TF_RUNNER_VERSION=env.TF_RUNNER_VERSION
 
 
       # Sign the resulting Docker image digest except on PRs.
