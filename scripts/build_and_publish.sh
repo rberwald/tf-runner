@@ -10,10 +10,7 @@ docker build \
   --no-cache \
   --progress plain \
   --pull \
-  --tag rberwald/tf-runner:${TF_RUNNER_VERSION}-${TERRAFORM_VERSION} \
+  --tag ghcr.io/rberwald/tf-runner:${TF_RUNNER_VERSION}-${TERRAFORM_VERSION} \
   .
 
-docker tag rberwald/tf-runner:${TF_RUNNER_VERSION}-${TERRAFORM_VERSION} rberwald/tf-runner:latest
-
-docker push rberwald/tf-runner:${TF_RUNNER_VERSION}-${TERRAFORM_VERSION}
-docker push rberwald/tf-runner:latest
+docker push ghcr.io/rberwald/tf-runner:${TF_RUNNER_VERSION}-${TERRAFORM_VERSION}
